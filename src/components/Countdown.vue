@@ -9,22 +9,22 @@
       <div class="flex justify-center space-x-3">
         <div class="flex flex-col items-center">
           <p class="digit">{{ days | twoDigits }}</p>
-          <p class="">{{ days > 1 ? 'DAYS' : 'DAY' }}</p>
+          <p class="">{{ days > 1 ? 'Giorni' : 'Giorno' }}</p>
         </div>
         <p class="colon">:</p>
         <div class="flex flex-col items-center">
           <p class="digit">{{ hours | twoDigits }}</p>
-          <p class="">{{ hours > 1 ? 'HOURS' : 'HOUR' }}</p>
+          <p class="">{{ hours > 1 ? 'Ore' : 'Ora' }}</p>
         </div>
         <p class="colon">:</p>
         <div class="flex flex-col items-center">
           <p class="digit">{{ minutes | twoDigits }}</p>
-          <p class="">MIN</p>
+          <p class="">{{ minutes > 1 ? 'Minuti' : 'Minuto' }}</p>
         </div>
         <p class="colon">:</p>
         <div class="flex flex-col items-center">
           <p class="digit">{{ seconds | twoDigits }}</p>
-          <p class="">SEC</p>
+          <p class="">{{ seconds > 1 ? 'Secondi' : 'Secondo' }}</p>
         </div>
       </div>
     </div>
